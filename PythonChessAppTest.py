@@ -3,7 +3,7 @@ Example written for Qxf2 Services' blog post on Python Unit Checking
 Check if IsCheckmate method in ChessRules class calls GetListOfValidMoves  
 Assert that it called with the expected arguments
 """
-import unittest, mock
+import unittest, xmlrunner, mock
 import ChessRules 
 from ChessBoard import ChessBoard
  
@@ -43,5 +43,5 @@ class CheckIsCheckmate(unittest.TestCase):
 if __name__=="__main__":
 #unittest.main()
 #unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
-import xmlrunner
+#import xmlrunner
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
